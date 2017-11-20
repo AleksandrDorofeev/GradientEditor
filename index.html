@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GradientGenerator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="file_upload">
+    <button type="button">Выбрать</button>
+    <div>Файл не выбран</div>
+    <input type="file" class="imgInp" onchange="readURL(this)" />
+  </div>
+  <!-- <input type='file' class="imgInp" onchange="readURL(this)" /> -->
+  <div class='picture'>
+    <img id="blah" src="#" alt="image" width="100%" height="250px" />
+    <div class="overlay"></div>
+  </div>
+
+  <div class="sliders">
+    <div class="opacity-container">
+      <span>opacity</span>
+      <div class="opacity-slider"></div>
+    </div>
+    <span class="transition-container">color stops</span>
+    <div class="transition-slider"></div>
+    <span class="gradient"></span>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

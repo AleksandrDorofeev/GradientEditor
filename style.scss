@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+.file_upload {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 46%;
+    margin-bottom: 5%;
+    width: 110px;
+    overflow: hidden;
+    font-size: 1em;
+    height: 50px;
+    line-height: 2em
+}
+.file_upload > button{
+    width: 8em;
+    height: 100%;
+    padding: 0 15px 0 15px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;
+    opacity: 0;
+    cursor: pointer
+}
+
+.picture {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .overlay {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+img {
+  position: relative;
+
+}
+
+.sliders {
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+}
+.opacity-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  height: 80px;
+}
+.opacity-slider {
+  width: 180px;
+  border: 0;
+  height: 4px;
+  background: #424242;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  .ui-slider-handle{
+    position: absolute;
+    margin: -5px 0 0 -7px;
+    border-radius: 100%;
+    background: black;
+    border: 0;
+    height: 14px;
+    width: 14px;
+    outline: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  .ui-slider-range{
+    background: #4ac1ff;
+  }
+}
+
+.transition-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  height: 80px;
+}
+.transition-slider {
+  width: 180px;
+  border: 0;
+  height: 4px;
+  background: #424242;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  .ui-slider-handle{
+    position: absolute;
+    margin: -5px 0 0 -7px;
+    border-radius: 100%;
+    background: green;
+    border: 0;
+    height: 14px;
+    width: 14px;
+    outline: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  .ui-slider-range{
+    background: #4ac1ff;
+  }
+}
+
+.gradient {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: block;
+  text-align: center;
+}
